@@ -1,15 +1,14 @@
-------DBUtilsPool:
-
+#DBUtilsPool:
 数据库连接池
 通过对象调用，getInstance()获取连接对象
 调用完后使用release(connection)释放连接
 此2个步骤为必须。
 模板：
-	public User getUser(String uid) {
-		User result=null;
-	    DBUtilsPool pool = null;
-	    Connection con = null;
-		try {
+	public User getUser(String uid) {  
+	    User result=null;  
+	    DBUtilsPool pool = null;  
+	    Connection con = null;  
+		try {  
 			pool = ConnectionPool.getInstance();
 			con = pool.getConnection();
 		} catch (Exception se) {
@@ -32,10 +31,10 @@
 		}
 		return result;
 	}
+</code>
 
 
-
-------RSAUtils:
+#RSAUtils:
 
 RSA加密算法。主要用于登陆密码加密，通过此Util调用【generateBase64PublicKey()】获取PublicKey
 传至前端JavaScript进行RSA加密,前端确认加密后，才可发送密文。
@@ -48,14 +47,14 @@ RSA加密算法。主要用于登陆密码加密，通过此Util调用【generat
 
 
 
-------TripleDESUtils:
+#TripleDESUtils:
 
 3DES加密算法。主要用于数据库读取和存入密码。
 【encrypt】进行加密-->  String result = TripleDESUtiles.encrypt(String src);
 【decrypt】进行解密
 
 
-**PS:
+##PS:
 BASE64编码。
 比方说RSAUtils中的方法【generateBase64PublicKey()】进行了BASE64加密
 因为早期的一些邮件服务器只支持文本信息，不支持二进制信息和文件。
