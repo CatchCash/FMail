@@ -12,16 +12,16 @@ public class DBUtilsTest {
    @Test
    public void DBUtilsTest() throws SQLException {
       String sql = "select * from userInfo";
-      DBUtilsPool pool = null;
+      DBUtils pool = null;
       //test ready
          int cycCount=300;
          long start = System.currentTimeMillis();
-      //consume DBUtilsPool init
-         pool= DBUtilsPool.getInstance();
+      //consume DBUtils init
+         pool=DBUtils.getInstance();
          long initEnd = System.currentTimeMillis();
-      //consume DBUtilsPool conns
+      //consume DBUtils conns
       for (int i = 0; i < cycCount; i++) {
-         pool = DBUtilsPool.getInstance();
+         pool = DBUtils.getInstance();
          Connection conn = pool.getConnection();
          Statement stmt = conn.createStatement();
          ResultSet rs = stmt.executeQuery(sql);
