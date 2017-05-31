@@ -37,7 +37,7 @@
 
 RSA加密算法。主要用于登陆密码加密，通过此Util调用【generateBase64PublicKey()】获取PublicKey
 传至前端JavaScript进行RSA加密,前端确认加密后，才可发送密文。
-之后通过传输过来的密文进行私钥解密，与存放在数据库里的密文进行TripleDESUtils解密后比较。
+之后通过传输过来的密文进行私钥解密，与存放在数据库里的密文进行AESUtils解密后比较。
 【generateBase64PublicKey()】获取PublicKey-->String PublicKey = RSAUtils.generateBase64PublicKey();
 【decryptBase64】进行解密--> String result = RSAUtils.decryptBase64(String src);
 假定传输内容含有非ASCII低128位字符。

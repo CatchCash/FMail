@@ -12,7 +12,7 @@ import java.security.SecureRandom;
  */
 public class AESUtils {
 
-    private static final String password = "p1?][;2131pc05./";
+    private static final String password = "t@IV(9mR?Pu1zmUi";
     /**加密
      * @param content  String 待加密
      * @return
@@ -91,12 +91,14 @@ public class AESUtils {
 
 public static void main(String[] args){
     String content = "jasfopnq 21 j401ujc42k1n0c912j4n12v";
+    AESUtils tmp1= new AESUtils();
+    AESUtils tmp2= new AESUtils();
 //加密
 System.out.println("加密前：" + content);
-    String encryptResultStr = encryptHex(content);
+    String encryptResultStr = tmp1.encryptHex(content);
 System.out.println("加密后：" + encryptResultStr);
     //解密
-    String decryptResultStr = decryptHex(encryptResultStr);
+    String decryptResultStr = tmp2.decryptHex(encryptResultStr);
 System.out.println("解密后：" + decryptResultStr);
 }
 
