@@ -9,7 +9,7 @@ import java.util.Vector;
 /**
  * Created by Dao on 2017/5/31.
  */
-public class DBUtils {
+public class DBUtilsPool {
 
     private Vector<Connection> pool;
 
@@ -26,14 +26,14 @@ public class DBUtils {
      */
     private int poolSize = 1;
 
-    private static DBUtils instance = null;
+    private static DBUtilsPool instance = null;
 
     private static long connCount=0;
     /**
      * 私有的构造方法，禁止外部创建本类的对象，要想获得本类的对象，通过getIstance方法。
      * 使用了设计模式中的单子模式。
      */
-    private DBUtils() {
+    private DBUtilsPool() {
         init();
     }
 
@@ -76,9 +76,9 @@ public class DBUtils {
     /**
      * 返回当前连接池的一个对象
      */
-    public static DBUtils getInstance() {
+    public static DBUtilsPool getInstance() {
         if (instance == null) {
-            instance = new DBUtils();
+            instance = new DBUtilsPool();
         }
         return instance;
     }

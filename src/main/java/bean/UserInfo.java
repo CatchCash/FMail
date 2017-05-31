@@ -7,8 +7,14 @@ import java.io.Serializable;
  */
 public class UserInfo implements Serializable {
     private static final long serialVersionUID = 107717350835356583L;
+
     private int uid;
     private String nickName;
+
+    public UserInfo(int uid, String nickName) {
+        this.uid = uid;
+        this.nickName = nickName;
+    }
 
     public int getUid() {
         return uid;
