@@ -61,7 +61,7 @@ public class UserLoginAction extends ActionSupport implements ServletRequestAwar
     }
     //用户退出
     public  String userLogout(){
-
+        return null;
     }
     //完成输入校验需要重写的validate方法
     public void validate()

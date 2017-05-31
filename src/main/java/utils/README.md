@@ -9,29 +9,28 @@
 	    DBUtilsPool pool = null;  
 	    Connection con = null;  
 		try {  
-			pool = ConnectionPool.getInstance();
-			con = pool.getConnection();
-		} catch (Exception se) {
-			System.out.println("数据库连接失败！");
-			se.printStackTrace();
-		}
-		try {
-		    /*select 之后的字段必须指定，不准使用*替代*/
-			String sql = "select uid,nickName from userInfo where uid = ?"
-			PreparedStatement preparedStatement = con.prepareStatement(sql);
-			preparedStatement.setString(1, uid);
-			ResultSet resultSet = preparedStatement.executeQuery();
-			while (resultSet.next()) {
-				result= new UserInfo(resultSet.getString(1), resultSet.getString(2));
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		} finally {
-			pool.release(con);
-		}
-		return result;
-	}
-</code>
+			pool = ConnectionPool.getInstance();  
+			con = pool.getConnection();  
+		} catch (Exception se) {  
+			System.out.println("数据库连接失败！");  
+			se.printStackTrace();  
+		}  
+		try {  
+		    /*select 之后的字段必须指定，不准使用*替代*/  
+			String sql = "select uid,nickName from userInfo where uid = ?"  
+			PreparedStatement preparedStatement = con.prepareStatement(sql);  
+			preparedStatement.setString(1, uid);  
+			ResultSet resultSet = preparedStatement.executeQuery();  
+			while (resultSet.next()) {  
+				result= new UserInfo(resultSet.getString(1), resultSet.getString(2));  
+			}  
+		} catch (Exception e) {  
+			e.printStackTrace();  
+		} finally {  
+			pool.release(con);  
+		}  
+		return result;  
+	}  
 
 
 #RSAUtils:
@@ -52,6 +51,21 @@ RSA加密算法。主要用于登陆密码加密，通过此Util调用【generat
 3DES加密算法。主要用于数据库读取和存入密码。
 【encrypt】进行加密-->  String result = TripleDESUtiles.encrypt(String src);
 【decrypt】进行解密
+
+#AESUtils
+AES加密算法，内置唯一password，256位加密。
+方法全为static。类调用即可
+【encryptHex】(String)加密结果16进制String
+【encrypt】(String)加密结果2进制byte[]
+【decryptHex】(String)解密为原文String
+【decrypt】(byte[])解密结果2进制byte[]
+
+
+#ParseSystemUtil
+
+进制转换工具
+【parseByte2HexStr】(byte[])2进制转16进制
+【parseHexStr2Byte】(String)16进制转2进制
 
 
 ##PS:

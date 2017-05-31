@@ -9,6 +9,8 @@ import bean.User;
  */
 public interface UserDao {
 
+    User checkUser(String account, String password);
+
     public interface UserDAO {
         /**
          * 检测用户是否存在，并返回该用户
