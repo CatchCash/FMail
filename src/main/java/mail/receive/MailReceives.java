@@ -10,18 +10,15 @@ import java.util.Properties;
 public class MailReceives {
     public static void main(String[] args) throws Exception {
         // 定义连接POP3服务器的属性信息
-        String pop3Server = "pop.qq.com";
+        String pop3Server = "pop3.hnu.edu.cn";
         String protocol = "pop3";
-        String username = "386208935@qq.com";
-        String pop3Port = String.valueOf(MailConstant.pop3Port_SSL);
-        String password = MailConstant.pop3Passwd; // QQ邮箱的SMTP的授权码，什么是授权码，它又是如何设置？
+        String username = "wangsixiong@hnu.edu.cn";
+        String password = "f1sd23a4"; // QQ邮箱的SMTP的授权码，什么是授权码，它又是如何设置？
 
         Properties props = new Properties();
-        props.setProperty("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
         props.setProperty("mail.transport.protocol", protocol); // 使用的协议（JavaMail规范要求）
         props.setProperty("mail.smtp.host", pop3Server); // 发件人的邮箱的 SMTP服务器地址
-        props.setProperty("mail.smtp.port", "465"); // 发件人的邮箱的 SMTP服务器端口
-        props.setProperty("mail.smtp.socketFactory.port", "465");
+
 
 
         // 获取连接

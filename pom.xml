@@ -3,7 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>FMail</groupId>
     <artifactId>FMail</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -18,6 +17,33 @@
         <artifactId>mail</artifactId>
         <version>1.5.0-b01</version>
     </dependency>
+    <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>4.0.0-b06</version>
+    </dependency>
+    <dependency>
+    <groupId>commons-codec</groupId>
+    <artifactId>commons-codec</artifactId>
+    <version>1.10</version>
+    </dependency>
+    <dependency>
+        <groupId>org.bouncycastle</groupId>
+        <artifactId>bcprov-jdk15on</artifactId>
+        <version>1.57</version>
+    </dependency>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.1</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>com.mysql</groupId>
+        <artifactId>management</artifactId>
+        <version>5-0-2-beta</version>
+    </dependency>
+
 </dependencies>
 
 </project>
