@@ -1,11 +1,27 @@
 package mail.receive;
 
+import bean.User;
+
 import javax.mail.*;
 import java.util.Properties;
 /**
  * Created by Dao on 2017/5/29.
  */
 public class MailReceives {
+    private User user;
+    public void setUser(User user){
+        this.user=user;
+    }
+    public Message[] Receives(){
+        if(user==null)
+            return null;
+        else{
+
+        }
+    }
+    public static Message[] Receives(User user){
+
+    }
     public static void main(String[] args) throws Exception {
         // 定义连接POP3服务器的属性信息
         String pop3Server = "pop3.hnu.edu.cn";
