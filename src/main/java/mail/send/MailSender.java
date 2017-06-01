@@ -3,13 +3,11 @@ package mail.send;
 import bean.Mail;
 import bean.User;
 import mail.base.MailConstant;
-import org.apache.commons.lang3.ObjectUtils;
 
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.Session;
 import javax.mail.Transport;
-import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Date;
@@ -24,32 +22,41 @@ public class MailSender {
     public void setUser(User user){
         this.user=user;
     }
+    public User getUser(){
+        return user;
+    }
     public void setMail(Mail mail){
         this.mail=mail;
     }
+    public Mail getMail(){
+        return mail;
+    }
     public boolean sender(String to,String title,String bodyContent){
-        
+        mail.setTo(to);
+        mail.setTitle(title);
+        mail.setBodyContent(bodyContent);
+        return sender();
     }
     /*
     * @Param default config
     * @Return if no error about your message,return true else false;
     * */
     public boolean sender(){
-        if(mail==null){
+        if(mail==null||user==null){
             return false;
         }
         else{
-            return sender(mail);
+            return sender(mail,user);
         }
     }
     /*
     * @Param Mail mail 首先传入mail对象
     * @Return if no error about your message,return true else false;
     * */
-    public static boolean sender(Mail mail){
+    public static boolean sender(Mail mail,User user){
         boolean result = true;
-        String from = mail.getUser().getAccount();
-        String password = mail.getUser().getPassword();
+        String from = user.getAccount();
+        String password = user.getPassword();
         String to = mail.getTo();
         String title = mail.getTitle();
         String bodyContent = mail.getBodyContent();
@@ -101,12 +108,18 @@ public class MailSender {
         }
     }
     public static void main(String[] args) throws Exception {
-        Mail mail =new Mail();
-        mail.setUser(new User(1,"wangsixiong@hnu.edu.cn","f1sd23a4","AES"));
-        mail.setTo("chinaqqyx@qq.com");
-        mail.setTitle("new test");
-        mail.setBodyContent("test content");
-        if(sender(mail))
+        Mail mail =new Mail(
+                "chinaqqyx@qq.com",
+                "new test",
+                "test content"
+        );
+        User user = new User(
+                1,
+                "wangsixiong@hnu.edu.cn",
+                "f1sd23a4",
+                "AES"
+        );
+        if(sender(mail,user))
             System.out.println("Send Success");
         else
             System.out.println("Send Error");

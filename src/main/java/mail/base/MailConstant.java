@@ -1,5 +1,7 @@
 package mail.base;
 
+import java.util.Map;
+
 /**
  * Created by Dao on 2017/5/29.
  */
