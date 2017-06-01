@@ -1,7 +1,5 @@
 package mail.receive;
 
-import mail.MailConstant;
-
 import javax.mail.*;
 import java.util.Properties;
 /**
@@ -41,7 +39,8 @@ public class MailReceives {
             Address from = (Address) message.getFrom()[0];// 获得发送者地址
             System.out.println("邮件的主题为: " + subject + "\t发件人地址为: " + from);
             System.out.println("邮件的内容为：");
-            message.writeTo(System.out);// 输出邮件内容到控制台
+            System.out.println(message.getContent().toString());
+            //message.writeTo(System.out);// 输出邮件内容到控制台
         }
 
         folder.close(false);// 关闭邮件夹对象
