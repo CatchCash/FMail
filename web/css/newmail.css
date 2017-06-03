@@ -1,0 +1,90 @@
+/* 适配 iPhone SE */
+@media (width: 320px) and (height: 568px) {
+    .newmail-text {
+        min-height: 110px !important;
+    }
+}
+
+/* 适配 iPhone 6s */
+@media (width: 375px) and (height: 667px) {
+    .newmail-text {
+        min-height: 200px !important;
+    }
+}
+
+/* 适配 iPhone 6s Plus */
+@media (width: 414px) and (height: 736px) {
+    .newmail-text {
+        min-height: 280px !important;
+    }
+}
+
+/* 适配 iPad */
+@media (width: 768px) and (height: 1024px) {
+    .newmail-text {
+        min-height: 450px !important;
+    }
+}
+
+/* 适配 800x600 投影仪 */
+@media (width: 800px) and (height: 600px) {
+    .newmail-text {
+        min-height: 120px !important;
+    }
+}
+
+/* 适配 1024x768 投影仪 */
+@media (width: 1024px) and (height: 768px) {
+    .newmail-text {
+        min-height: 220px !important;
+    }
+}
+
+/* 适配 1280 显示器 */
+@media (width: 1280px) {
+    .newmail-text {
+        min-height: 250px !important;
+    }
+}
+
+/* 适配 1366 显示器 */
+@media (width: 1366px) {
+    .newmail-text {
+        min-height: 200px !important;
+    }
+}
+
+/* 适配 iPad Pro */
+@media (width: 1366px) and (height: 1024px) {
+    .newmail-text {
+        min-height: 450px !important;
+    }
+}
+
+/* 适配 1440 以上的显示器 */
+@media (min-width: 1440px) {
+    .newmail-text {
+        min-height: 30em !important;
+    }
+}
+
+/* Hiding the <input> */
+.inputfile {
+	/*width: 0.1px;
+	height: 0.1px;*/
+    width: 1000px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+/* Accessibility */
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
+/* 上传按钮上间距 */
+.input-btn {
+	margin-top: 1%;
+}
