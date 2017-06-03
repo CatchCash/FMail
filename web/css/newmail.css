@@ -67,3 +67,24 @@
         min-height: 30em !important;
     }
 }
+
+/* Hiding the <input> */
+.inputfile {
+	/*width: 0.1px;
+	height: 0.1px;*/
+    width: 1000px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+/* Accessibility */
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
+/* 上传按钮上间距 */
+.input-btn {
+	margin-top: 1%;
+}

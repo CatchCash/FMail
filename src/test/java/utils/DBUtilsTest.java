@@ -10,7 +10,7 @@ import java.sql.ResultSet;
  */
 public class DBUtilsTest {
    @Test
-   public void DBUtilsTest() throws SQLException {
+   public void DBUtilsTest() throws SQLException {/*
       String sql = "select * from userInfo";
       DBUtils pool = null;
       //test ready
@@ -34,7 +34,7 @@ public class DBUtilsTest {
       pool.closePool();
       System.out.println("初始化连接池时间：" + (initEnd - start) + "ms\n");
       System.out.println("经过"+cycCount+"次的循环调用，使用连接池花费的时间:" + (System.currentTimeMillis() - initEnd) + "ms\n");
-
+*/
    }
 
 }

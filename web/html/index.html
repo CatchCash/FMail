@@ -7,6 +7,7 @@
     <title>邮件系统 - 收件箱</title>
     <link rel="stylesheet" href="../css/mdui.min.css">
     <link rel="stylesheet" href="../css/mail.css">
+    <link rel="icon" type="image/png" href="../icons/mail_favicon.png">
 </head>
 
 <body class="mdui-appbar-with-toolbar mdui-theme-primary-blue mdui-theme-accent-pink">
@@ -47,46 +48,49 @@
         </ul>
     </div>
 
-    <div class="mdui-container mail-container mdui-col-md-10 mdui-col-offset-md-1 mdui-col-lg-8 mdui-col-offset-lg-2">
+    <div class="mdui-container mail-container mdui-col-md-8 mdui-col-offset-md-2 mdui-col-lg-8 mdui-col-offset-lg-2">
         <div class="mdui-panel mdui-panel-popout" mdui-panel="{accordion: true}">
             <div class="mdui-panel-item">
-                <div class="mdui-panel-item-header">
-                    <div class="mdui-panel-item-title mdui-col-offset-sm-2">张三</div>
-                    <div class="mdui-panel-item-summary mdui-col-offset-sm-1">求职邮件</div>
+                <div class="mdui-panel-item-header mail-header">
+                    <div class="mdui-panel-item-title mdui-col-offset-sm-1">张三</div>
+                    <div class="mdui-panel-item-summary">求职邮件</div>
+                    <div class="mdui-panel-item-summary text-right">5月31日</div>
                     <i class="mdui-panel-item-arrow mdui-icon material-icons">&#xe313;</i>
                 </div>
-                <div class="mdui-panel-item-body mdui-typo">
-                    <h2>求职邮件</h2>
+                <div class="mdui-panel-item-body mdui-typo mail-details">
+                    <!-- <h1>求职邮件</h1>
                     <div class="mdui-divider mail-divider"></div>
                     <p>您好。</p>
                     <p>我是xx大学xx专业的本科生，2018年6月毕业。看到贵公司正招聘实习生，并一直期望有机会加盟贵公司。</p>
                     <p>我性格开朗，具备IT人士所必需的适应高强度的工作压力的能力。现将我的简历一并附上，希望你能考虑我的应聘要求。</p>
                     <p>最后，不管您是否选择我都请您接受我​最诚挚的谢意。</p>
-                    <p>谨祝贵公司越办越好!</p>
+                    <p>谨祝贵公司越办越好!</p> -->
                 </div>
             </div>
             <div class="mdui-panel-item">
-                <div class="mdui-panel-item-header">
-                    <div class="mdui-panel-item-title mdui-col-offset-sm-2">李狗蛋</div>
-                    <div class="mdui-panel-item-summary mdui-col-offset-sm-1">材料抄送</div>
+                <div class="mdui-panel-item-header mail-header">
+                    <div class="mdui-panel-item-title mdui-col-offset-sm-1">李狗蛋</div>
+                    <div class="mdui-panel-item-summary">材料抄送</div>
+                    <div class="mdui-panel-item-summary text-right">4月20日</div>
                     <i class="mdui-panel-item-arrow mdui-icon material-icons">&#xe313;</i>
                 </div>
-                <div class="mdui-panel-item-body mdui-typo">
-                    <h2>材料抄送</h2>
+                <div class="mdui-panel-item-body mdui-typo mail-details">
+                    <!-- <h1>材料抄送</h1>
                     <div class="mdui-divider mail-divider"></div>
-                    <p>您好，这是我的材料，请查收。</p>
+                    <p>您好，这是我的材料，请查收。</p> -->
                 </div>
             </div>
             <div class="mdui-panel-item">
-                <div class="mdui-panel-item-header">
-                    <div class="mdui-panel-item-title mdui-col-offset-sm-2">赵四</div>
-                    <div class="mdui-panel-item-summary mdui-col-offset-sm-1">购物推荐</div>
+                <div class="mdui-panel-item-header mail-header">
+                    <div class="mdui-panel-item-title mdui-col-offset-sm-1">赵四</div>
+                    <div class="mdui-panel-item-summary">购物推荐</div>
+                    <div class="mdui-panel-item-summary text-right">11月2日</div>
                     <i class="mdui-panel-item-arrow mdui-icon material-icons">&#xe313;</i>
                 </div>
-                <div class="mdui-panel-item-body mdui-typo">
-                    <h2>购物推荐</h2>
+                <div class="mdui-panel-item-body mdui-typo mail-details">
+                    <!-- <h1>购物推荐</h1>
                     <div class="mdui-divider mail-divider"></div>
-                    <p>苹果商城霸榜前五233天！xx手游新版公测啦！7大福利立刻领。回复TD退订</p>
+                    <p>苹果商城霸榜前五233天！xx手游新版公测啦！7大福利立刻领。回复TD退订</p> -->
                 </div>
             </div>
         </div>
@@ -97,13 +101,8 @@
     </button>
 
     <script src="../js/mdui.min.js"></script>
-    <script>
-        var $$ = mdui.JQ;
-
-        $$('.newmail-btn').on('click', function(e) {
-            document.location.assign('newmail.html');
-        });
-    </script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/index-and-sent.js"></script>
 </body>
 
 </html>

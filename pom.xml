@@ -10,7 +10,7 @@
     <dependency>
         <groupId>org.apache.struts</groupId>
         <artifactId>struts2-core</artifactId>
-        <version>2.3.30</version>
+        <version>2.5.10.1</version>
     </dependency>
     <dependency>
         <groupId>javax.mail</groupId>
@@ -39,11 +39,40 @@
         <scope>test</scope>
     </dependency>
     <dependency>
-        <groupId>com.mysql</groupId>
-        <artifactId>management</artifactId>
-        <version>5-0-2-beta</version>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.14</version>
+    <scope>compile</scope>
     </dependency>
 
+    <dependency>
+        <groupId>com.mysql</groupId>
+        <artifactId>management</artifactId>
+        <version>1.1.6</version>
+        <exclusions>
+            <exclusion>
+                <artifactId>jmxtools</artifactId>
+                <groupId>com.sun.jdmk</groupId>
+            </exclusion>
+            <exclusion>
+                <artifactId>junit</artifactId>
+                <groupId>junit</groupId>
+            </exclusion>
+        </exclusions>
+    </dependency>
 </dependencies>
-
+    <packaging>war</packaging>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <warName>${project.artifactId}</warName>
+                    <webXml>web\WEB-INF\web.xml</webXml>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

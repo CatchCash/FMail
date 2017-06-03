@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/mdui.min.css">
     <link rel="stylesheet" href="../css/mail.css">
     <link rel="stylesheet" href="../css/newmail.css">
+    <link rel="icon" type="image/png" href="../icons/mail_favicon.png">
 </head>
 
 <body class="mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink">
@@ -63,13 +64,20 @@
             <label class="mdui-textfield-label">正文</label>
             <textarea class="mdui-textfield-input newmail-text"></textarea>
         </div>
+
+        <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1" data-multiple-caption="已选择 {count} 个附件" multiple />
+        <label for="file-1" class="mdui-btn mdui-btn-raised mdui-ripple input-btn">
+            <i class="mdui-icon material-icons">&#xe226;</i><span>附件</span>
+        </label>
     </div>
 
     <button class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed" mdui-tooltip="{content: '发送', position: 'left'}">
         <i class="mdui-icon material-icons">&#xe163;</i>
     </button>
 
+
     <script src="../js/mdui.min.js"></script>
+    <script src="../js/custom-file-input.js"></script>
 </body>
 
 </html>

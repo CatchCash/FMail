@@ -32,13 +32,15 @@ public class MailConstant {
     *
     * */
     //public static final String host = "localhost";//主机
-    public static final String doname="hnu.edu.cn";
+   // public static final String doname="hnu.edu.cn";
+    public static final String doname="qq.com";
+    public static final String smtpServer = "smtp."+doname;
+    //public static final int smtpPort = 25;
+    public static final int smtpPort = 465;
     //public static final String imapPasswd = "pjaaegrcpruxbidf";
     //public static final String pop3Passwd = "rojunwbrhmhybhgi";
-    public static final String pop3Server = "pop3."+doname;
-    public static final String smtpServer = "smtp."+doname;
-    //public static final int pop3Port_SSL = 995;
-    //public static final int smtpPort_SSL = 465;
     public static final String imapServer = "imap."+doname;
+    public static final String pop3Server = "pop."+doname;
     //public static final int imapPort = 465;
+    public static final int pop3Port_SSL = 995;
 }

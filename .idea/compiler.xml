@@ -9,8 +9,8 @@
         <module name="FMail" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="FMail" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="FMail" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -4,10 +4,7 @@ import bean.Mail;
 import bean.User;
 import mail.base.MailConstant;
 
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.Session;
-import javax.mail.Transport;
+import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Date;
@@ -55,22 +52,36 @@ public class MailSender {
     * */
     public static boolean sender(Mail mail,User user){
         boolean result = true;
-        String from = user.getAccount();
-        String password = user.getPassword();
-        String to = mail.getTo();
-        String title = mail.getTitle();
-        String bodyContent = mail.getBodyContent();
+        final String from = user.getAccount();
+        final String password = user.getPassword();
+        final String to = mail.getTo();
+        final String title = mail.getTitle();
+        final String bodyContent = mail.getBodyContent();
 
         //properties set
         Properties props=new Properties();
-        props.setProperty("mail.transport.protocol","smtp");// 使用的协议（JavaMail规范要求）
+        /*props.setProperty("mail.transport.protocol","smtp");// 使用的协议（JavaMail规范要求）
         props.setProperty("mail.smtp.host", MailConstant.smtpServer);// 发件人的邮箱的 SMTP服务器地址
         props.setProperty("mail.smtp.auth","true");// 请求认证，参数名称与具体实现有关
+*/
+
+        props.put("mail.smtp.host", MailConstant.smtpServer);
+        props.put("mail.smtp.socketFactory.port", MailConstant.smtpPort);
+        props.put("mail.smtp.socketFactory.class",
+                "javax.net.ssl.SSLSocketFactory");
+        props.put("mail.smtp.auth", "true");
+        props.put("mail.smtp.port", MailConstant.smtpPort);
 
         //session part
         // 创建Session实例对象
         try {
-        Session session = Session.getDefaultInstance(props);
+        Session session = Session.getDefaultInstance(props,
+                new javax.mail.Authenticator() {
+                    protected PasswordAuthentication
+                    getPasswordAuthentication() {
+                        return new
+                                PasswordAuthentication(from, password);
+                    }});
         // 创建MimeMessage实例对象
         MimeMessage message = new MimeMessage(session);
         // 设置发件人
@@ -114,10 +125,12 @@ public class MailSender {
                 "test content"
         );
         User user = new User(
-                1,
-                "wangsixiong@hnu.edu.cn",
-                "f1sd23a4",
-                "AES"
+                0,
+                /*"wangsixiong@hnu.edu.cn",*/
+                "386208935@qq.com",
+                /*"f1sd23a4",*/
+                "rojunwbrhmhybhgi",
+                null
         );
         if(sender(mail,user))
             System.out.println("Send Success");

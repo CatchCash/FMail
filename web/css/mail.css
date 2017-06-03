@@ -15,6 +15,10 @@ body {
     text-align: center;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .input-container {
     margin-top: 25px;
     padding-left: 30px;

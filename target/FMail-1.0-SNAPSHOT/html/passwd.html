@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>邮件系统 - 修改密码</title>
+    <link rel="stylesheet" href="../css/mdui.min.css">
+    <link rel="stylesheet" href="../css/mail.css">
+</head>
+
+<body class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-pink">
+
+    <header class="mdui-appbar mdui-appbar-fixed">
+        <div class="mdui-toolbar mdui-color-theme">
+            <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#drawer'}">
+                <i class="mdui-icon material-icons">&#xe5d2;</i>
+            </span>
+            <span class="mdui-typo-title">修改密码</span>
+        </div>
+    </header>
+
+    <div class="mdui-drawer mdui-drawer-close" id="drawer">
+        <ul class="mdui-list">
+            <li class="mdui-subheader">邮件管理</li>
+            <a href="index.jsp" class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">&#xe156;</i>
+                <div class="mdui-list-item-content">收件箱</div>
+            </a>
+            <a href="newmail.html" class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">&#xe0e1;</i>
+                <div class="mdui-list-item-content">写邮件</div>
+            </a>
+            <a href="sent.html" class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">&#xe163;</i>
+                <div class="mdui-list-item-content">已发邮件</div>
+            </a>
+            <li class="mdui-subheader">用户管理</li>
+            <a href="passwd.html" class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">&#xe32a;</i>
+                <div class="mdui-list-item-content">修改密码</div>
+            </a>
+            <a href="login.html" class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">&#xe879;</i>
+                <div class="mdui-list-item-content">退出用户</div>
+            </a>
+        </ul>
+    </div>
+
+    <div class="mdui-container input-container mdui-col-md-6 mdui-col-offset-md-3 mdui-card">
+        <div class="mdui-textfield mdui-textfield-floating-label">
+            <label class="mdui-textfield-label">原密码</label>
+            <input class="mdui-textfield-input" type="password" id="old-passwd"/>
+        </div>
+
+        <div class="mdui-textfield mdui-textfield-floating-label">
+            <label class="mdui-textfield-label">新密码</label>
+            <input class="mdui-textfield-input" type="password" id="new-passwd-first"/>
+        </div>
+
+        <div class="mdui-textfield mdui-textfield-floating-label">
+            <label class="mdui-textfield-label">再次确认</label>
+            <input class="mdui-textfield-input" type="password" id="new-passwd-second"/>
+        </div>
+    </div>
+
+    <button class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed passwd-btn" mdui-tooltip="{content: '确认', position: 'left'}">
+        <i class="mdui-icon material-icons">&#xe5ca;</i>
+    </button>
+
+    <script src="../js/mdui.min.js"></script>
+    <script>
+        var $$ = mdui.JQ;
+
+        $$('.passwd-btn').on('click', function(e) {
+            var op = $$('#old-passwd').val(),
+                npf = $$('#new-passwd-first').val();
+                nps = $$('#new-passwd-second').val();
+            if (op == "" || npf == "" || nps == "") {
+                mdui.snackbar({
+                    message: "请输入原/新密码",
+                });
+                return;
+            } else if (npf != nps) {
+                mdui.snackbar({
+                    message: "两次输入的新密码不一致",
+                });
+                return;
+            } else if (op == npf) {
+                mdui.snackbar({
+                    message: "新密码不能和原密码一样",
+                });
+                return;
+            } else {
+                mdui.snackbar({
+                    message: "修改成功！",
+                });
+                return;
+            }
+        });
+    </script>
+</body>
+
+</html>
