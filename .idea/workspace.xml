@@ -2,67 +2,270 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa6ad5bf-bbd1-4fb3-915f-50e952e7624a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/FMail.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mysql_management_1_1_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_1_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/FMail_Web_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_commons_3_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_tree_3_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aspectj_aspectjrt_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aspectj_aspectjtools_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mysql_management_5_0_2_beta.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jdmk_jmxtools_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javassist_javassist_3_11_0_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_19.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_xwork_xwork_core_2_3_30.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/mail/MailConstant.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/html/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/dbpool.properties" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/mail/receive/MailReceives.class" afterPath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/mail/receive/MailReceives.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/action/UserLoginAction.class" afterPath="$PROJECT_DIR$/target/classes/action/UserLoginAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/bean/Mail.class" afterPath="$PROJECT_DIR$/target/classes/bean/Mail.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/bean/User.class" afterPath="$PROJECT_DIR$/target/classes/bean/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/bean/UserInfo.class" afterPath="$PROJECT_DIR$/target/classes/bean/UserInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/UserDao$UserDAO.class" afterPath="$PROJECT_DIR$/target/classes/dao/UserDao$UserDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dao/UserDao.class" afterPath="$PROJECT_DIR$/target/classes/dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mail/base/MailConstant.class" afterPath="$PROJECT_DIR$/target/classes/mail/base/MailConstant.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mail/receive/MailReceiveSSL.class" afterPath="$PROJECT_DIR$/target/classes/mail/receive/MailReceiveSSL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mail/receive/MailReceives.class" afterPath="$PROJECT_DIR$/target/classes/mail/receive/MailReceives.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mail/send/MailSender.class" afterPath="$PROJECT_DIR$/target/classes/mail/send/MailSender.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utils/AESUtils.class" afterPath="$PROJECT_DIR$/target/classes/utils/AESUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utils/DBUtils.class" afterPath="$PROJECT_DIR$/target/classes/utils/DBUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utils/ParseSystemUtil.class" afterPath="$PROJECT_DIR$/target/classes/utils/ParseSystemUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utils/RSAUtils.class" afterPath="$PROJECT_DIR$/target/classes/utils/RSAUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utils/TripleDESUtils.class" afterPath="$PROJECT_DIR$/target/classes/utils/TripleDESUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/utils/DBUtilsTest.class" afterPath="$PROJECT_DIR$/target/test-classes/utils/DBUtilsTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/Error.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/Success.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/action/UserLoginAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/bean/Mail.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/bean/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/bean/UserInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/dao/UserDao$UserDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/dao/UserDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/dbpool.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/mail/base/MailConstant.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/mail/receive/MailReceiveSSL.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/mail/receive/MailReceives.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/mail/send/MailSender$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/mail/send/MailSender.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/struts.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/utils/AESUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/utils/DBUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/utils/ParseSystemUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/utils/RSAUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/classes/utils/TripleDESUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/lib/activation-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/lib/bcprov-jdk15on-1.57.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/lib/commons-codec-1.10.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/lib/commons-fileupload-1.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/lib/commons-io-2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/lib/commons-lang3-3.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/lib/freemarker-2.3.23.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/lib/javassist-3.20.0-GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/lib/log4j-1.2.14.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/lib/log4j-api-2.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/lib/mail-1.5.0-b01.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/lib/management-1.1.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/lib/mysql-connector-java-3.1.12.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/lib/ognl-3.1.12.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/lib/struts2-core-2.5.10.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/css/buttonStyle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/css/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/css/mail.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/css/mdui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/css/mdui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/css/mms_login.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/css/newmail.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-Black.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-Black.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-BlackItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-BlackItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-Bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-Bold.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-BoldItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-BoldItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-Light.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-Light.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-LightItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-LightItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-Medium.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-Medium.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-MediumItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-MediumItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-Regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-Regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-RegularItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-RegularItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-Thin.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-Thin.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-ThinItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/fonts/roboto/Roboto-ThinItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/html/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/html/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/html/newmail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/html/passwd.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/html/sent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/icons/material-icons/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/icons/material-icons/MaterialIcons-Regular.ijmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/icons/material-icons/MaterialIcons-Regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/icons/material-icons/MaterialIcons-Regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/images/right_arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/js/login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/js/mdui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail/js/mdui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/Error.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/Success.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/action/UserLoginAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/bean/Mail.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/bean/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/bean/UserInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/dao/UserDao$UserDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/dao/UserDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/dbpool.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/mail/base/MailConstant.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/mail/receive/MailReceiveSSL.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/mail/receive/MailReceives.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/mail/send/MailSender$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/mail/send/MailSender.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/struts.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/utils/AESUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/utils/DBUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/utils/ParseSystemUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/utils/RSAUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/utils/TripleDESUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/css/buttonStyle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/css/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/css/mail.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/css/mdui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/css/mdui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/css/mms_login.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/css/newmail.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-Black.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-Black.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-BlackItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-BlackItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-Bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-Bold.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-BoldItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-BoldItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-Light.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-Light.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-LightItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-LightItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-Medium.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-Medium.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-MediumItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-MediumItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-Regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-Regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-RegularItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-RegularItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-Thin.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-Thin.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-ThinItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/fonts/roboto/Roboto-ThinItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/html/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/html/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/html/newmail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/html/passwd.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/html/sent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/icons/material-icons/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/icons/material-icons/MaterialIcons-Regular.ijmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/icons/material-icons/MaterialIcons-Regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/icons/material-icons/MaterialIcons-Regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/images/right_arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/js/login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/js/mdui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/js/mdui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/Error.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/Success.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/action/UserLoginAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/bean/Mail.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/bean/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/bean/UserInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/dao/UserDao$UserDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/dao/UserDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/dbpool.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/mail/base/MailConstant.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/mail/receive/MailReceiveSSL.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/mail/receive/MailReceives.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/mail/send/MailSender$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/mail/send/MailSender.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/struts.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/utils/AESUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/utils/DBUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/utils/ParseSystemUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/utils/RSAUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/classes/utils/TripleDESUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/lib/activation-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/lib/bcprov-jdk15on-1.57.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.10.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/lib/commons-lang3-3.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/lib/freemarker-2.3.23.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.20.0-GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/lib/javax.servlet-api-4.0.0-b06.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.14.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/lib/mail-1.5.0-b01.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/lib/management-1.1.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-3.1.12.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/lib/ognl-3.1.12.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/lib/struts2-core-2.5.10.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/css/buttonStyle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/css/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/css/mail.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/css/mdui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/css/mdui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/css/mms_login.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/css/newmail.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-Black.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-Black.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-BlackItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-BlackItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-Bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-Bold.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-BoldItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-BoldItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-Light.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-Light.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-LightItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-LightItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-Medium.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-Medium.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-MediumItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-MediumItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-Regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-Regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-RegularItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-RegularItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-Thin.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-Thin.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-ThinItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/fonts/roboto/Roboto-ThinItalic.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/html/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/html/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/html/newmail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/html/passwd.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/html/sent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/icons/material-icons/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/icons/material-icons/MaterialIcons-Regular.ijmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/icons/material-icons/MaterialIcons-Regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/icons/material-icons/MaterialIcons-Regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/images/right_arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/js/login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/js/mdui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail-1.0-SNAPSHOT/js/mdui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/FMail.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/action/UserLoginAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bean/Mail.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bean/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bean/UserInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/dao/UserDao$UserDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/dao/UserDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/dbpool.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mail/base/MailConstant.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mail/receive/MailReceiveSSL.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mail/receive/MailReceives$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mail/receive/MailReceives.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mail/send/MailSender$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mail/send/MailSender.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/struts.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/utils/AESUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/utils/DBUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/utils/ParseSystemUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/utils/RSAUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/utils/TripleDESUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/utils/DBUtilsTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FMail.iml" afterPath="$PROJECT_DIR$/FMail.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/classes/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/css/mail.css" afterPath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/css/mail.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/html/login.html" afterPath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/html/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/html/sent.html" afterPath="$PROJECT_DIR$/out/artifacts/FMail_Web_exploded/html/sent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mail/base/MailConstant.java" afterPath="$PROJECT_DIR$/src/main/java/mail/base/MailConstant.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mail/receive/MailReceives.java" afterPath="$PROJECT_DIR$/src/main/java/mail/receive/MailReceives.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mail/send/MailSender.java" afterPath="$PROJECT_DIR$/src/main/java/mail/send/MailSender.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/utils/DBUtilsTest.java" afterPath="$PROJECT_DIR$/src/test/java/utils/DBUtilsTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/html/newmail.html" afterPath="$PROJECT_DIR$/web/html/newmail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/html/passwd.html" afterPath="$PROJECT_DIR$/web/html/passwd.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/html/sent.html" afterPath="$PROJECT_DIR$/web/html/sent.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/login.js" afterPath="$PROJECT_DIR$/web/js/login.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts2_core_2_3_30.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts2_core_2_5_10_1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_22.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/html/index.html" afterPath="$PROJECT_DIR$/web/html/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -146,7 +349,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2730">
               <caret line="136" column="48" lean-forward="false" selection-start-line="136" selection-start-column="48" selection-end-line="136" selection-end-column="48" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#659#660#0" expanded="false" />
+                <element signature="e#681#682#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,8 +361,8 @@
       <file leaf-file-name="MailReceives.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/mail/receive/MailReceives.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="91" column="27" lean-forward="false" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
+            <state relative-caret-position="63">
+              <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
               <folding>
                 <element signature="e#2434#2443#0" expanded="true" />
               </folding>
@@ -168,17 +375,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="693">
               <caret line="36" column="2" lean-forward="false" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/html/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1386">
-              <caret line="66" column="45" lean-forward="false" selection-start-line="66" selection-start-column="45" selection-end-line="66" selection-end-column="45" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -400,6 +599,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FMail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FMail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -409,7 +622,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
@@ -941,16 +1154,15 @@
       <workItem from="1496314272496" duration="951000" />
       <workItem from="1496317069845" duration="8812000" />
       <workItem from="1496362837642" duration="11117000" />
-      <workItem from="1496480515573" duration="1374000" />
+      <workItem from="1496480515573" duration="2809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45456000" />
+    <option name="totallyTimeSpent" value="46891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="754" extended-state="1" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -958,12 +1170,12 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.54392385" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24816984" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24815361" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33125973" sideWeight="0.5937042" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33125973" sideWeight="0.5937042" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1957164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1957164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1443,7 +1655,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2730">
           <caret line="136" column="48" lean-forward="false" selection-start-line="136" selection-start-column="48" selection-end-line="136" selection-end-column="48" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#659#660#0" expanded="false" />
+            <element signature="e#681#682#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1459,14 +1675,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="693">
           <caret line="36" column="2" lean-forward="false" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mail/receive/MailReceives.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="91" column="27" lean-forward="false" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
+        <state relative-caret-position="63">
+          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
           <folding>
             <element signature="e#2434#2443#0" expanded="true" />
           </folding>
