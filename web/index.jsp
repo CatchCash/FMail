@@ -1,3 +1,10 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib uri="/struts-tags" prefix="s" %>
+<%@ page import="bean.User" %>
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 <!DOCTYPE html>
 <html>
 
@@ -24,7 +31,7 @@
     <div class="mdui-drawer mdui-drawer-close" id="drawer">
         <ul class="mdui-list">
             <li class="mdui-subheader">邮件管理</li>
-            <a href="index.html" class="mdui-list-item mdui-ripple">
+            <a href="index.jsp" class="mdui-list-item mdui-ripple">
                 <i class="mdui-list-item-icon mdui-icon material-icons">&#xe156;</i>
                 <div class="mdui-list-item-content">收件箱</div>
             </a>
@@ -65,32 +72,6 @@
                     <p>我性格开朗，具备IT人士所必需的适应高强度的工作压力的能力。现将我的简历一并附上，希望你能考虑我的应聘要求。</p>
                     <p>最后，不管您是否选择我都请您接受我​最诚挚的谢意。</p>
                     <p>谨祝贵公司越办越好!</p> -->
-                </div>
-            </div>
-            <div class="mdui-panel-item">
-                <div class="mdui-panel-item-header mail-header">
-                    <div class="mdui-panel-item-title mdui-col-offset-sm-1">李狗蛋</div>
-                    <div class="mdui-panel-item-summary">材料抄送</div>
-                    <div class="mdui-panel-item-summary text-right">4月20日</div>
-                    <i class="mdui-panel-item-arrow mdui-icon material-icons">&#xe313;</i>
-                </div>
-                <div class="mdui-panel-item-body mdui-typo mail-details">
-                    <!-- <h1>材料抄送</h1>
-                    <div class="mdui-divider mail-divider"></div>
-                    <p>您好，这是我的材料，请查收。</p> -->
-                </div>
-            </div>
-            <div class="mdui-panel-item">
-                <div class="mdui-panel-item-header mail-header">
-                    <div class="mdui-panel-item-title mdui-col-offset-sm-1">赵四</div>
-                    <div class="mdui-panel-item-summary">购物推荐</div>
-                    <div class="mdui-panel-item-summary text-right">11月2日</div>
-                    <i class="mdui-panel-item-arrow mdui-icon material-icons">&#xe313;</i>
-                </div>
-                <div class="mdui-panel-item-body mdui-typo mail-details">
-                    <!-- <h1>购物推荐</h1>
-                    <div class="mdui-divider mail-divider"></div>
-                    <p>苹果商城霸榜前五233天！xx手游新版公测啦！7大福利立刻领。回复TD退订</p> -->
                 </div>
             </div>
         </div>
