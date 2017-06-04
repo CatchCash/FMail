@@ -15,7 +15,7 @@ public class UserLoginAction extends ActionSupport {
     private static final long serialVersionUID = 5386429367683022172L;
 
     @Resource
-    private UserDao userDao;
+    private UserDaoImpl userDao;
     private User user;
 
     public User getUser() {
@@ -27,34 +27,35 @@ public class UserLoginAction extends ActionSupport {
     }
     //用户注册
     public String regist(){
-        UserDaoImpl dao=new UserDaoImpl();
-        int result=dao.addUser(user.getAccount(),user.getPassword());
+         userDao=new UserDaoImpl();
+        int result=userDao.addUser(user.getAccount(),user.getPassword());
+        System.out.println(result);
         if(result!=-1){
             JOptionPane.showMessageDialog(null, "注册成功");
-            return INPUT;
+            return SUCCESS;
         }
         else {
             JOptionPane.showMessageDialog(null, "注册失败");
-            return INPUT;
+            return ERROR;
         }
 
     }
 
     //用户登录
     public  String login(){
+        userDao=new UserDaoImpl();
         User checkUser=userDao.checkUser(user.getAccount(),user.getPassword());
         if(null==checkUser) {
-            return LOGIN;
+            return SUCCESS;
         }
         else{
             ActionContext.getContext().put("tip",getText("success"));
             ActionContext.getContext().put("account",user.getAccount());
-            return SUCCESS;
+            return ERROR;
         }
     }
     public String execute() throws Exception{
-        System.out.println("UserLoginAction start");
-       return SUCCESS;
+       return INPUT;
     }
     //用户退出
     public  String userLogout(){

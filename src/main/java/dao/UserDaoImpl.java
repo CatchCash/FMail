@@ -23,7 +23,7 @@ public class UserDaoImpl implements UserDao{
         }
         try {
 		    /*select 之后的字段必须指定，不准使用*替代*/
-            String sql = "select uid,account,password from user where account = ? and password = ?";
+            String sql = "select account,password from user where account = ? and password = ?";
             PreparedStatement preparedStatement = con.prepareStatement(sql);
             preparedStatement.setString(1, account);//account=1 where account=1
             preparedStatement.setString(2, password);
@@ -67,7 +67,7 @@ public class UserDaoImpl implements UserDao{
                             resultSet.getString(2),
                             resultSet.getString(3));
                 }*/
-                result=preparedStatement.executeUpdate();
+                 result=preparedStatement.executeUpdate();
             } catch (Exception e) {
                 System.out.println("注册错误");
                 e.printStackTrace();

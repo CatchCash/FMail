@@ -12,7 +12,7 @@ $$('#log-login-btn').on('click', function(e) {
         });
         return;
     } else {
-        this.form.action="UserLoginAction";
+        this.form.action="login";
         this.form.submit();
     }
 });
@@ -41,7 +41,7 @@ $$('#en-enroll-btn').on('click', function(e) {
         $$('.enroll-confirm-passwd').hide();
         $$('.enroll-btn-list').hide();
         $$('.login-btn-list').show();
-        this.form.action="UserLoginAction";
+        this.form.action="regist";
         this.form.submit();
     }
 });
