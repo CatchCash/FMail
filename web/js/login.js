@@ -12,7 +12,8 @@ $$('#log-login-btn').on('click', function(e) {
         });
         return;
     } else {
-        document.location.assign('index.html');
+        this.form.action="UserLoginAction";
+        this.form.submit();
     }
 });
 
@@ -37,12 +38,11 @@ $$('#en-enroll-btn').on('click', function(e) {
         });
         return;
     } else {
-        mdui.snackbar({
-            message: "注册成功！",
-        });
         $$('.enroll-confirm-passwd').hide();
         $$('.enroll-btn-list').hide();
         $$('.login-btn-list').show();
+        this.form.action="UserLoginAction";
+        this.form.submit();
     }
 });
 

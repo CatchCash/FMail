@@ -1,3 +1,10 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib uri="/struts-tags" prefix="s" %>
+<%@ page import="bean.User" %>
+<%
+    String path = request.getContextPath();
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 <!DOCTYPE html>
 <html>
 
@@ -12,7 +19,7 @@
 </head>
 
 <body class="mdui-theme-primary-blue mdui-theme-accent-pink login-container">
-
+<form id="loginForm" name="login_register"  method="post">
     <div class="mdui-container login-input-container mdui-card mdui-col-md-4 mdui-col-offset-md-4 mdui-col-sm-6 mdui-col-offset-sm-3">
         <div class="mdui-card-primary">
             <div class="mdui-card-primary-title text-center">邮件系统</div>
@@ -20,41 +27,42 @@
 
         <div class="mdui-textfield mdui-textfield-floating-label">
             <label class="mdui-textfield-label">用户名</label>
-            <input class="mdui-textfield-input" id="user-name"/>
+            <input class="mdui-textfield-input" name="user.account" id="account"/>
         </div>
 
         <div class="mdui-textfield mdui-textfield-floating-label">
             <label class="mdui-textfield-label">密码</label>
-            <input class="mdui-textfield-input" id="first-passwd" type="password"/>
+            <input class="mdui-textfield-input" name="user.password" id="first-passwd" type="password"/>
         </div>
 
         <div class="mdui-textfield mdui-textfield-floating-label enroll-confirm-passwd">
             <label class="mdui-textfield-label">确认密码</label>
-            <input class="mdui-textfield-input" id="confirm-passwd" type="password"/>
+            <input class="mdui-textfield-input" name="repassword" id="confirm-passwd" type="password"/>
         </div>
 
         <div class="mdui-row-xs-2 login-button text-center login-btn-list">
             <div class="mdui-col">
-                <button class="mdui-btn mdui-btn-block mdui-btn-raised mdui-ripple mdui-color-blue" id="log-login-btn">登录</button>
+                <input value="登录" class="mdui-btn mdui-btn-block mdui-btn-raised mdui-ripple mdui-color-blue" id="log-login-btn"></input>
             </div>
             <div class="mdui-col">
-                <button class="mdui-btn mdui-btn-block mdui-btn-raised mdui-ripple" id="log-enroll-btn">注册</button>
+                <input value="注册" class="mdui-btn mdui-btn-block mdui-btn-raised mdui-ripple"id="log-enroll-btn"></input>
             </div>
         </div>
 
         <div class="mdui-row-xs-2 login-button text-center enroll-btn-list">
             <div class="mdui-col">
-                <button class="mdui-btn mdui-btn-block mdui-btn-raised mdui-ripple mdui-color-blue" id="en-enroll-btn">注册</button>
+                <input value="注册" class="mdui-btn mdui-btn-block mdui-btn-raised mdui-ripple mdui-color-blue" id="en-enroll-btn"></input>
             </div>
             <div class="mdui-col">
-                <button class="mdui-btn mdui-btn-block mdui-btn-raised mdui-ripple enroll-btn" id="en-cancel-btn">取消</button>
+                <input value="取消" class="mdui-btn mdui-btn-block mdui-btn-raised mdui-ripple enroll-btn" id="en-cancel-btn"></input>
             </div>
         </div>
     </div>
+</form>
 
-    <script src="js/mdui.min.js"></script>
+    <script type="text/javascript" src="js/mdui.min.js"></script>
 
-    <script src="js/login.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
 </body>
 
 </html>

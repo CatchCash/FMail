@@ -5,11 +5,11 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-    <package name="userAction" namespace="/" extends="struts-default">
-        <action name="Login" class="action.UserLoginAction">
-            <result name="success">/WEB-INF/Success.jsp</result>
-            <result name="error">/WEB-INF/Error.jsp</result>
-            <result name="input">/WEB-INF/index.jsp</result>
+    <package name="dafault" namespace="/" extends="struts-default">
+        <action name="UserLoginAction" class="action.UserLoginAction">
+            <result name="success">/index.html</result>
+            <result name="error">/Error.jsp</result>
+            <result name="input">/login.jsp</result>
         </action>
     </package>
 </struts>

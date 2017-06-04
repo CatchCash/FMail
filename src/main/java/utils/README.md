@@ -1,4 +1,4 @@
-#DBUtilsPool:
+#DBUtils:
 数据库连接池
 通过对象调用，getInstance()获取连接对象
 调用完后使用release(connection)释放连接
@@ -6,10 +6,10 @@
 模板：
 	public User getUser(String uid) {  
 	    User result=null;  
-	    DBUtilsPool pool = null;  
+	    DBUtils pool = null;  
 	    Connection con = null;  
 		try {  
-			pool = ConnectionPool.getInstance();  
+			pool = DBUtils.getInstance();  
 			con = pool.getConnection();  
 		} catch (Exception se) {  
 			System.out.println("数据库连接失败！");  

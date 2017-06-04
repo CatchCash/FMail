@@ -132,7 +132,7 @@ public class MailReceives {
         long start=System.nanoTime();
         Mail[] mails = Receives(
                 new User(
-                        0,/*
+                        /*
                 "wangsixiong@hnu.edu.cn",
                 "f1sd23a4",*/
                         "386208935@qq.com",

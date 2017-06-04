@@ -125,7 +125,6 @@ public class MailSender {
                 "test content"
         );
         User user = new User(
-                0,
                 /*"wangsixiong@hnu.edu.cn",*/
                 "386208935@qq.com",
                 /*"f1sd23a4",*/

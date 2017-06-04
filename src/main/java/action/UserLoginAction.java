@@ -1,61 +1,60 @@
 package action;
 
 import bean.User;
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import dao.UserDao;
-import org.apache.struts2.interceptor.ServletRequestAware;
-import org.apache.struts2.interceptor.ServletResponseAware;
-import org.apache.struts2.interceptor.SessionAware;
-
+import dao.UserDaoImpl;
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
-import java.util.Map;
+import javax.swing.JOptionPane;
 
 /**
  * Created by Dao on 2017/5/31.
  */
-public class UserLoginAction extends ActionSupport implements ServletRequestAware ,
-        ServletResponseAware,SessionAware{
+public class UserLoginAction extends ActionSupport {
     private static final long serialVersionUID = 5386429367683022172L;
 
     @Resource
     private UserDao userDao;
-    private String account;
-    private String password;
+    private User user;
 
-
-    public String getAccount() {
-        return account;
+    public User getUser() {
+        return user;
     }
 
-    public void setAccount(String account) {
-        this.account = account;
+    public void setUser(User user) {
+        this.user = user;
     }
+    //用户注册
+    public String regist(){
+        UserDaoImpl dao=new UserDaoImpl();
+        int result=dao.addUser(user.getAccount(),user.getPassword());
+        if(result!=-1){
+            JOptionPane.showMessageDialog(null, "注册成功");
+            return INPUT;
+        }
+        else {
+            JOptionPane.showMessageDialog(null, "注册失败");
+            return INPUT;
+        }
 
-    public String getPassword() {
-        return password;
     }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
 
     //用户登录
-    public String execute() throws Exception{
-        String account=getAccount();
-        String result=SUCCESS;
-        if(account!=null && !"".equals(account) &&
-                password!=null && !"".equals(password)){
-            User user=userDao.checkUser(account,password);
-            if(user!=null){
-                System.out.println("login");
-                result=SUCCESS;
-            }
-            else
-                result=ERROR;
+    public  String login(){
+        User checkUser=userDao.checkUser(user.getAccount(),user.getPassword());
+        if(null==checkUser) {
+            return LOGIN;
         }
-        return result;
+        else{
+            ActionContext.getContext().put("tip",getText("success"));
+            ActionContext.getContext().put("account",user.getAccount());
+            return SUCCESS;
+        }
+    }
+    public String execute() throws Exception{
+        System.out.println("UserLoginAction start");
+       return SUCCESS;
     }
     //用户退出
     public  String userLogout(){
@@ -64,19 +63,10 @@ public class UserLoginAction extends ActionSupport implements ServletRequestAwar
     //完成输入校验需要重写的validate方法
     public void validate()
     {
-        if(getAccount().trim().equals(""))
+        if(user.getAccount()==null||user.getAccount().trim().equals(""))
             addFieldError("account","error");
-    }
-
-    public void setServletRequest(HttpServletRequest httpServletRequest) {
-
-    }
-
-    public void setServletResponse(javax.servlet.http.HttpServletResponse httpServletResponse) {
-
-    }
-
-    public void setSession(Map<String, Object> map) {
-
+        if(user.getPassword()==null||user.getPassword().trim().equals("")){
+            addFieldError("password","error");
+        }
     }
 }
